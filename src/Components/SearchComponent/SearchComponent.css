@@ -1,0 +1,32 @@
+.SearchComponent {
+  width: 100%;
+  padding: 0.2rem 0;
+}
+
+.SearchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SearchBar .SearchIconBox {
+  width: 80px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SearchBar .SearchIconBox i {
+  cursor: pointer;
+  color: var(--IconColor);
+}
+
+.SearchBar input {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  padding: 0 0.5rem;
+  border: none;
+  color: var(--IconColor);
+}

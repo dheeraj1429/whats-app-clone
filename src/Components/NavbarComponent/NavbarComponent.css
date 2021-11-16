@@ -1,0 +1,37 @@
+.NavbarComponent {
+  width: 100%;
+  padding: 1rem 0.2rem;
+  background-color: var(--NavbarColor);
+}
+
+.Navbar__inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+.Navbar__inner .UserProfile {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.UserProfile .user {
+  width: 100%;
+}
+
+.UserDetails {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.UserDetails i {
+  font-size: 0.3rem;
+  margin: 0.1rem 0;
+  color: var(--IconColor);
+}

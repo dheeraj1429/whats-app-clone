@@ -1,0 +1,42 @@
+.User {
+  width: 100%;
+  padding: 0.8rem 1rem;
+}
+
+.User:hover {
+  cursor: pointer;
+  background-color: var(--NavbarColor);
+}
+
+.User .User__Details {
+  display: flex;
+  align-items: center;
+}
+
+.User .UserProfileDiv {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.User .UserProfileDiv img {
+  width: 100%;
+}
+
+.User__Details .About__User {
+  margin: 0 1rem;
+}
+
+.About__User h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(54, 54, 54);
+}
+
+.About__User p {
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+  color: var(--TitleColor);
+}

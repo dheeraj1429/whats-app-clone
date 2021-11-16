@@ -1,0 +1,62 @@
+.ChatRoomComponent {
+  width: 70%;
+  height: 100%;
+  background-image: url(https://wallpapercave.com/wp/wp2737729.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.ChatInnerDiv {
+  width: 100%;
+  height: 92%;
+}
+
+.MassageDiv {
+  width: 100%;
+  height: 8%;
+  padding: 0.5rem 1rem;
+  background-color: var(--NavbarColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.MassageDiv .EmogiDiv {
+  width: 5%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: var(--IconColor);
+}
+
+.MassageDiv .EmogiDiv i {
+  cursor: pointer;
+}
+
+.MassageDiv .SendMassageDiv {
+  width: 85%;
+}
+
+.MassageDiv .VoiceMassageDiv {
+  width: 5%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: var(--IconColor);
+}
+
+.MassageDiv .VoiceMassageDiv i {
+  cursor: pointer;
+}
+
+.MassageDiv .SendMassageDiv input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+}
