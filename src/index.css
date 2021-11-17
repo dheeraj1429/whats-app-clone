@@ -20,4 +20,9 @@ code {
   --NavbarColor: #eeeeee;
   --TitleColor: #616161;
   --IconColor: #8c8b8a;
+  --MainColor: #fff;
+}
+
+a {
+  text-decoration: none;
 }

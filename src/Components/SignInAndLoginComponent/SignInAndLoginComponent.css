@@ -1,0 +1,26 @@
+.SignAndLogIn {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SignInInnerDiv {
+  text-align: center;
+  display: grid;
+  place-content: center;
+}
+
+.SignInInnerDiv img {
+  width: 300px;
+}
+
+.SignInButton {
+  width: 100%;
+  background-color: #5491f3;
+  color: var(--MainColor);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}

@@ -13,6 +13,12 @@ const userReducer = (state = initalStae, action) => {
         chatUser: action.payload,
       };
 
+    case actionType.CURRENT_USER:
+      return {
+        ...state,
+        currentUser: action.payload,
+      };
+
     default:
       return state;
   }

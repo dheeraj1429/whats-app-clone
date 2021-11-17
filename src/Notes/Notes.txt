@@ -1,0 +1,5 @@
+emogi api -> https://api.github.com/emojis
+
+cartoon -> https://robohash.org/
+
+cartoon card -> https://robohash.org/1.png?set=set1&size=150x150

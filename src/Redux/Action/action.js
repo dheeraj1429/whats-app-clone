@@ -6,3 +6,10 @@ export const chatUser = (data) => {
     payload: data,
   };
 };
+
+export const currentUser = (data) => {
+  return {
+    type: actionType.CURRENT_USER,
+    payload: data,
+  };
+};

@@ -1,0 +1,18 @@
+.MassageComponent {
+  width: auto;
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.userName {
+  color: var(--MainColor);
+  font-size: 0.6rem;
+}
+
+.Massage__InnerDiv {
+  padding: 0.5rem 0.4rem;
+  width: auto;
+  background-color: var(--MainColor);
+  border-radius: 10px;
+  margin: 0.2rem 0;
+}
