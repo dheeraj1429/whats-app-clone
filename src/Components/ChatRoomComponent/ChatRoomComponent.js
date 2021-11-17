@@ -1,12 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+import { useSelector } from "react-redux";
+import { firestore } from "../../Firebase/firebase.util";
 
 import "./ChatRoomComponent.css";
 
 function ChatRoomComponent() {
   const [Massage, setMassage] = useState("");
+  const selector = useSelector((state) => state.user);
+
+  const { chatUser } = selector;
 
   const ChangeMassageHandler = (e) => {
     setMassage(e.target.value);
+  };
+
+  const SendMassageHandler = (e) => {
+    e.preventDefault();
+    if (chatUser == []) return;
+    const { id } = chatUser;
+    console.log(id);
+
+    firestore.collection("users").doc(id).collection("comments").add({
+      Massage,
+    });
   };
 
   return (
@@ -20,7 +36,7 @@ function ChatRoomComponent() {
           <input type="text" value={Massage} onChange={ChangeMassageHandler} />
         </div>
         <div className="VoiceMassageDiv">
-          <i class="fas fa-paper-plane"></i>
+          <i class="fas fa-paper-plane" onClick={SendMassageHandler}></i>
         </div>
       </div>
     </div>

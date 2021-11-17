@@ -15,7 +15,6 @@ function UserComponent({ image, sortTitle, username, id }) {
         dispatch(
           chatUser({
             image,
-            sortTitle,
             username,
             id,
           })
