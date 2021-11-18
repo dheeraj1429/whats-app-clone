@@ -1,0 +1,29 @@
+.ChatNabvarComponent {
+  width: 100%;
+  padding: 1rem 0.2rem;
+  background-color: var(--NavbarColor);
+}
+
+.ChatRoom_NavbarInner {
+  display: flex;
+  align-items: center;
+}
+
+.ChatUserImg {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  object-fit: contain;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+}
+
+.ChatRoom_NavbarInner h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(54, 54, 54);
+}
+
+.ChatUserImg img {
+  width: 100%;
+}

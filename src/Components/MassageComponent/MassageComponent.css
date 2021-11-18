@@ -16,3 +16,11 @@
   border-radius: 10px;
   margin: 0.2rem 0;
 }
+
+.CurrentUserMassage {
+  justify-content: end;
+}
+
+.CurrentUserMassage .Massage__InnerDiv {
+  background-color: #d8f2be;
+}

@@ -24,8 +24,6 @@ function App() {
     <div className="App">
       {CurrentUser == null ? <SignInAndLocinComponent /> : <HomePage />}
 
-      {/* if current user send the massage the show massage right side and if the another user send the massage the show massages into the left side */}
-
       {/* add emogis card */}
 
       {/* user also change the background image */}

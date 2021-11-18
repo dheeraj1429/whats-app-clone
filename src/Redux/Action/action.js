@@ -13,3 +13,10 @@ export const currentUser = (data) => {
     payload: data,
   };
 };
+
+export const emogiChatSet = (data) => {
+  return {
+    type: actionType.EMOGI_CHAR,
+    payload: data,
+  };
+};

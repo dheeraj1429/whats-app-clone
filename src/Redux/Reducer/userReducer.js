@@ -3,6 +3,7 @@ import { actionType } from "../ActionType/actionType";
 const initalStae = {
   currentUser: [],
   chatUser: [],
+  charSet: "",
 };
 
 const userReducer = (state = initalStae, action) => {
@@ -17,6 +18,12 @@ const userReducer = (state = initalStae, action) => {
       return {
         ...state,
         currentUser: action.payload,
+      };
+
+    case actionType.EMOGI_CHAR:
+      return {
+        ...state,
+        charSet: [...state.charSet, action.payload],
       };
 
     default:

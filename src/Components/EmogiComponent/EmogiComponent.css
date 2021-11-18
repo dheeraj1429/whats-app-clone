@@ -1,0 +1,13 @@
+.MassageDiv .EmogiDiv {
+  width: 5%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: var(--IconColor);
+}
+
+.MassageDiv .EmogiDiv i {
+  cursor: pointer;
+}

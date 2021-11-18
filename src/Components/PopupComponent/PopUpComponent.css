@@ -1,0 +1,19 @@
+.PopUpComponent {
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  padding: 0.5rem;
+  top: -200px;
+  left: 10px;
+  background-color: var(--MainColor);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(98, 98, 98);
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  overflow-x: hidden;
+}
+
+.PopUpComponent p {
+  width: 40px;
+  cursor: pointer;
+}
