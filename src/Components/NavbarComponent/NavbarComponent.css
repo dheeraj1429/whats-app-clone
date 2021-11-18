@@ -30,8 +30,8 @@
   cursor: pointer;
 }
 
-.UserDetails i {
-  font-size: 0.3rem;
-  margin: 0.1rem 0;
+.UserDetails {
+  font-size: 0.9rem;
   color: var(--IconColor);
+  margin-right: 1rem;
 }

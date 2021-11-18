@@ -24,8 +24,6 @@ function App() {
     <div className="App">
       {CurrentUser == null ? <SignInAndLocinComponent /> : <HomePage />}
 
-      {/* add emogis card */}
-
       {/* user also change the background image */}
     </div>
   );

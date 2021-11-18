@@ -26,6 +26,12 @@ const userReducer = (state = initalStae, action) => {
         charSet: [...state.charSet, action.payload],
       };
 
+    case actionType.REMOVE_EMOGIS:
+      return {
+        ...state,
+        charSet: [],
+      };
+
     default:
       return state;
   }

@@ -20,3 +20,9 @@ export const emogiChatSet = (data) => {
     payload: data,
   };
 };
+
+export const removeEmogi = () => {
+  return {
+    type: actionType.REMOVE_EMOGIS,
+  };
+};

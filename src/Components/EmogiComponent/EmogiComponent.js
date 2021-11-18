@@ -4,8 +4,9 @@ import PopUpComponent from "../PopupComponent/PopUpComponent";
 
 import "./EmogiComponent.css";
 
-function EmogiComponent() {
+function EmogiComponent({ onClick }) {
   const [EmogiCollection, setEmogiCollection] = useState([]);
+  const [ShowEmogiCard, setShowEmogiCard] = useState(false);
 
   useEffect(() => {
     const res = async function () {
@@ -18,10 +19,14 @@ function EmogiComponent() {
     res();
   }, []);
 
+  const changeStateHandler = () => {
+    ShowEmogiCard == false ? setShowEmogiCard(true) : setShowEmogiCard(false);
+  };
+
   return (
     <div className="EmogiCardSection">
-      <i class="fas fa-smile"></i>
-      <PopUpComponent data={EmogiCollection} />
+      <i class="fas fa-smile" onClick={changeStateHandler}></i>
+      <PopUpComponent data={EmogiCollection} onClick={onClick} className={ShowEmogiCard == true ? "ShowEmogi" : ""} />
     </div>
   );
 }

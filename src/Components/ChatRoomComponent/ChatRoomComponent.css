@@ -10,6 +10,27 @@
   background-image: url(https://images.unsplash.com/photo-1637088540112-289b2ced97b1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80);
   background-position: center;
   background-size: cover;
+  overflow-y: scroll;
+}
+
+.ChatInnerDiv::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.ChatInnerDiv::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.ChatInnerDiv::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.ChatInnerDiv::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .MassageDiv {

@@ -4,13 +4,13 @@ import { emogiChatSet } from "../../Redux/Action/action";
 
 import "./PopUpComponent.css";
 
-function PopUpComponent({ data }) {
+function PopUpComponent({ data, onClick, className }) {
   const dispatch = useDispatch();
 
   return (
-    <div className="PopUpComponent">
+    <div className={className ? `PopUpComponent ${className}` : "PopUpComponent"}>
       {data.map((el) => (
-        <p key={el.codes} onClick={() => dispatch(emogiChatSet(el.char))}>
+        <p key={el.codes} onClick={() => dispatch(emogiChatSet(el.char), onClick())}>
           {el.char}
         </p>
       ))}
